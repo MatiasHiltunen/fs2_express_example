@@ -1,0 +1,29 @@
+{
+  "name": "rest_api_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env server.js",
+    "start": "node server.js",
+    "test": "node --test --env-file=.env --test-reporter spec",
+    "test:coverage": "c8 node --test --env-file=.env"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.22.5"
+  },
+  "devDependencies": {
+    "c8": "^9.1.0"
+  }
+}
